@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<title>Clicktraders Admin</title>
+</head>
+
+<body>
+<img src=http://drewstar.superscripts.com/pix/test.jpg border=0>
+
+<p align="center"><font color="#FF0000" face="Arial"><big><big><strong>CLICKTRADERS ADMIN
+PANEL</strong></big></big></font></p>
+<div align="center"><center>
+<table border="0" width="40%" cellspacing="3" cellpadding="0">
+  <tr>
+    <td><form action="/cgi-bin/clicktraders/admin/admin.cgi" method="post">
+    </td>
+    <td width="41%" align="left" bgcolor="#008080"><p align="left"><font color="#FFFFFF"
+    face="Arial"><strong>Username</strong></font></td>
+    <td width="40%" align="left" bgcolor="#008080"><font face="Arial">
+<input type="hidden" name="function" value="getinfo">
+<input type="text"
+    name="username" size="20"></font></td>
+    <td width="21%"><font face="Arial"><small><input type="submit" value="Get Info"></small></font></td>
+  </tr></form>
+  <tr>
+    <td><form action="/cgi-bin/clicktraders/admin/admin.cgi" method="post">
+    </td>
+    <td width="41%" align="left" bgcolor="#008080"><p align="left"><font color="#FFFFFF"
+    face="Arial"><strong>Username</strong></font></td>
+    <td width="40%" align="left" bgcolor="#008080"><font face="Arial">
+<input type="hidden" name="function" value="modify">
+<input type="text"
+    name="username" size="20"></font></td>
+    <td width="21%"><font face="Arial"><small><input type="submit" value="Modify"></small></font></td>
+  </tr></form>
+  <tr>
+    <td><form action="/cgi-bin/clicktraders/admin/admin.cgi" method="post">
+    </td>
+    <td width="41%" align="left" bgcolor="#008080"><p align="left"><font color="#FFFFFF"
+    face="Arial"><strong>Username</strong></font></td>
+    <td width="40%" align="left" bgcolor="#008080"><font face="Arial"><input type="hidden" name="function" value="delete"><input type="text"
+    name="username" size="20"></font></td>
+    <td width="21%"><font face="Arial"><small><input type="submit" value="Delete "></small></font></td>
+  </tr></form>
+  <tr>
+    <td><form action="/cgi-bin/clicktraders/admin/scan.cgi" method="post">
+    </td>
+    <td width="81%" align="left" bgcolor="#008080" colspan="2"><p align="left"><font
+    color="#FFFFFF" face="Arial"><strong>BROWSE THROUGH USERS</strong></font></td>
+    <td width="21%"><font face="Arial"><small><input type="submit" value="Submit "></small></font></td>
+  </tr></form>
+  <tr>
+    <td><form action="/cgi-bin/clicktraders/admin/adminstats.cgi" method="post">
+
+    </td>
+    <td width="81%" align="left" bgcolor="#008080" colspan="2"><p align="left"><font
+    color="#FFFFFF" face="Arial"><strong>GET SYSTEM STATS</strong></font></td>
+    <td width="21%"><font face="Arial"><small><input type="submit" value="Submit "></small></font></td>
+  </tr></form>
+</table>
+</center></div>
+
+<p align="center"><font color="#FF0000" face="Arial"><big><big><strong>BULK EMAIL USERS</strong></big></big></font></p>
+<div align="center"><center>
+<form action="/cgi-bin/clicktraders/admin/quemail.cgi" method="post">
+<table border="0" width="36%" cellspacing="3" cellpadding="0">
+  <tr>
+    <td width="14%" bgcolor="#008080"><font face="Arial" color="#FFFFFF"><strong>Subject</strong></font></td>
+    <td width="86%"><small><font face="Arial"><input type="text" name="subject" size="50"></font></small></td>
+  </tr>
+  <tr>
+    <td width="14%" bgcolor="#008080"><font face="Arial" color="#FFFFFF"><strong>Message</strong></font></td>
+    <td width="86%"><small><font face="Arial"><textarea rows="12" name="message" cols="43"></textarea></font></small></td>
+  </tr>
+  <tr>
+    <td width="14%"><font face="Arial"></font></td>
+    <td width="86%"><font face="Arial"><input type="submit" value="Que Bulk Mail" name="B1"></font></td>
+  </tr></form>
+</table>
+</center></div>
+
+<p align="center"><font face="Arial"><small>CGI Developed by <a
+href="http://www.superscripts.com">www.superscripts.com</a></small></font></p>
+</body>
+</html>
+
