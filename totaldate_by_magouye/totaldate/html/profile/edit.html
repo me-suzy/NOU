@@ -1,0 +1,62 @@
+<HTML><BODY>
+
+<! You will want to create drop down boxes for these so that standardised
+   results can be extrapolated from searching.  This is purley a quick
+   template.  Values will probably want to be in lowercase - so as to
+   fit into "View Profile".>
+<! Remember to put quots around "value"... I didn't do it for all of the
+   fields hence messed it up :D>
+
+<FORM method=GET action=editprof2.cgi>
+<INPUT TYPE=hidden name=u value="$uid">
+<INPUT TYPE=hidden name=c value="$cookie">
+<CENTER><BIG>General...</BIG></CENTER><BR>
+Ethnicity (skin colour/origin): <INPUT type=text name=ethnic value="$ethnic"><BR>
+Sex: <INPUT type=text name=sex value="$sex"><BR>
+Search For Relationship: <INPUT type=text name=rtype value="$rtype"><BR>
+Sexual Orientation: <INPUT type=text name=orientation value="$orientation"><BR>
+Identify With Famous Person: <INPUT type=text name=star value="$star"><BR>
+Current Relationship: <INPUT type=text name=mstatus value="$mstatus"><BR>
+
+<CENTER><BIG>Live In..</BIG></CENTER><BR>
+City: <INPUT type=text name=city value="$city"><BR>
+State: <INPUT type=text name=state value="$state"><BR>
+Country: <INPUT type=text name=country value="$country"><BR>
+
+<CENTER><BIG>Physical Attributes...</BIG></CENTER><BR>
+Height: <INPUT type=text name=height value="$height"><BR>
+Weight: <INPUT type=text name=weight value="$weight"><BR>
+Hair: <INPUT type=text name=hair value="$hair"><BR>
+Eyes: <INPUT type=text name=eyes value="$eyes"><BR>
+
+<CENTER><BIG>Education/Career...</BIG></CENTER><BR>
+Educative Level: <INPUT type=text name=education value="$education"><BR>
+Intelligence: <INPUT type=text name=intelligence value="$intelligence"><BR>
+Job: <INPUT type=text name=job value="$job"><BR>
+Career Importance: <INPUT type=text name=cimportance value="$cimportance"><BR>
+Income: <INPUT type=text name=income value="$income"><BR>
+
+<CENTER><BIG>Miscellaneous...</BIG></CENTER><BR>
+Religion: <INPUT type=text name=religion value="$religion"><BR>
+^- Importance: <INPUT type=text name=rimp value="$rimp"><BR>
+Horoscope: <INPUT type=text name=horoscope value="$horoscope"><BR>
+High School Classification: <INPUT type=text name=hsclass value="$hsclass"><BR>
+Drink: <INPUT type=text name=drinking value="$drinking"><BR>
+Smoke: <INPUT type=text name=smoking value="$smoking"><BR>
+Drugs: <INPUT type=text name=drugs value="$drugs"><BR>
+Show In Searches: <SELECT name=searchshow><OPTION value=1>Yes<OPTION value=0>No</SELECT>
+
+<CENTER><BIG>Abstract...</BIG></CENTER><BR>
+
+I Describe Myself As...<BR>
+<TEXTAREA name=me>$me</TEXTAREA>
+
+<BR><BR>
+
+My ideal partner would be:<BR>
+<TEXTAREA name=idealp>$idealp</TEXTAREA>
+
+<BR><BR>
+<INPUT type=submit>
+</FORM>
+</BODY></HTML>
