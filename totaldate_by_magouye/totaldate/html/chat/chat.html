@@ -1,0 +1,24 @@
+<HTML>
+
+<APPLET CODE="irc.class" CODEBASE="." ARCHIVE="./JAVirc.jar" WIDTH=600 HEIGHT=400>
+<!-^- Leave as default>
+<PARAM NAME=serveur VALUE="intrepid.cliffhanger">
+<!-^- The server name.  Serveur is spelt with a "u" in this case, yes>
+<PARAM NAME=port VALUE=6667>
+<!-^- The port to connect to on.  Default should surfice>
+<PARAM NAME=username VALUE="webchat">
+<!-^- The user@ to specify for the user.  They can customise this.>
+<PARAM NAME=ircname VALUE="JAVirc http://www.dating.itr">
+<!-^- The field to show in the "Real Name" section of the whois>
+<PARAM NAME=FirstCommand VALUE="JOIN #datingonline">
+<!-^- To make the users join a channel it may be wise to specify
+	JOIN #channel>
+<PARAM NAME=RelayHost VALUE="10.10.10.2">
+<!-^- If the server you specified was not on the local box you will need
+	to specify localhost here and do datingdir/other/bin/relay.pl &>
+<PARAM NAME=RelayPort VALUE="9999">
+<!-^- If you specify realyhost, specify this as well.  Default should
+	suffice>
+</APPLET>
+
+</HTML>
