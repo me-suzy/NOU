@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<title>Supermall Administration</title>
+<meta name="Microsoft Border" content="none">
+</head>
+
+<body>
+<img src=http://drewstar.superscripts.com/pix/test.jpg border=0>
+
+<p align="center"><big><font color="#FF0000" face="Arial"><big><strong>SUPERMALL 1.0</strong></big></font><br>
+</big><a href="http://www.superscripts.com/"><small><font face="Arial">cgi developed by
+drew star</font></small></a></p>
+
+<p><font face="Arial"><small><strong>Supermall Database Administrative Search/Browse</strong></small></font></p>
+
+<form action="/cgi-bin/supermall/admin/adminsearch.cgi" method="post">
+<blockquote>
+  <table border="0" width="19%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="25%"><font face="Arial"><input type="text" name="keywords" size="25"></font></td>
+      <td width="25%"><font face="Arial"><select name="database" size="1">
+        <option selected value="">Select Database</option>
+        <option value="categories">Categories</option>
+        <option value="vendors">Vendors</option>
+        <option value="products">Products</option>
+        <option value="orders">Orders</option>
+      </select></font></td>
+      <td width="25%"><font face="Arial"><input type="submit" value="Search" name="B1"></font></td>
+    </tr>
+  </table>
+</blockquote>
+</form>
+
+<p><font face="Arial"><small><strong>Add New Records To Database</strong></small></font></p>
+<form action="/cgi-bin/supermall/admin/add.cgi" method="post">
+<blockquote>
+  <table border="0" width="8%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="50%"><font face="Arial"><select name="database" size="1">
+        <option selected value="">Select Database</option>
+        <option value="categories">Categories</option>
+        <option value="vendors">Vendors</option>
+        <option value="products">Products</option>
+      </select></font></td>
+      <td width="50%"><font face="Arial"><input type="hidden" name="action" value="generateform"><input type="submit" value="Add New Record" name="B1"></font></td>
+    </tr>
+  </table>
+</blockquote>
+</form>
+
+<blockquote>
+<form action="/cgi-bin/supermall/admin/spawn.cgi" method="post">
+<input type="submit" value="Spawn Mall Pages"></font>
+</form>
+</blockquote>
+<hr>
+
+<p align="center"><font color="#FF0000" face="Arial"><big><strong>ADMINISTRATIVE NOTES</strong></big></font></p>
+
+<p><font face="Arial"><small><strong>Database Administration/Add New Records To Database</strong></small></font></p>
+
+<blockquote>
+  <p><font face="Arial"><small>To browse simply select the database you wish to browse
+  (products, vendors, orders, or categories) and click execute without entering in any
+  keywords.&nbsp; To search enter up to seven (7) keywords seperated by commas or spaces.
+  &nbsp; Results are sorted chronologically (by date) in descending order.&nbsp; You will be
+  able to delete or modify information from the search or browsing results.&nbsp; Adding new
+  records/categories/etc will automatically update the html pages used for the mall or
+  generate new ones.</small></font></p>
+</blockquote>
+
+
+</body>
+</html>
