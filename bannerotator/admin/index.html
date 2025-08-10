@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<title>Admin Panel</title>
+<meta name="Microsoft Border" content="none">
+</head>
+
+<body>
+
+<p><font face="Arial" color="#FF0000"><big><strong>Admin Panel</strong></big></font></p>
+
+<p><font SIZE="2" face="Arial">
+
+<form action="/cgi-bin/banner/admin/stats.cgi" method="post">
+<input type="submit" value="Get Statistics"></font></p>
+</form>
+
+<p><big><font face="Arial" color="#FF0000"><strong>Add Account</strong></font></big></p>
+<form action="/cgi-bin/banner/admin/add.cgi" method="post">
+<table border="0" width="51%" cellpadding="0">
+  <tr>
+    <td width="50%"><strong><small><font face="Arial">Username</font></small></strong></td>
+    <td width="50%"><font SIZE="2" face="Arial"><input type="text" name="username" size="12"></font></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong><small><font face="Arial">Password</font></small></strong></td>
+    <td width="50%"><font SIZE="2" face="Arial"><input type="text" name="password" size="12"></font></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong><small><font face="Arial">Email Address</font></small></strong></td>
+    <td width="50%"><font SIZE="2" face="Arial"><input type="text" name="email" size="35"></font></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong><small><font face="Arial">Clickthrough URL</font></small></strong></td>
+    <td width="50%"><font SIZE="2" face="Arial"><input type="text" name="clickthroughurl"
+    size="35" value="http://"></font></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong><small><font face="Arial">Banner Image Name</font></small></strong></td>
+    <td width="50%"><font SIZE="2" face="Arial"><input type="text" name="bannername" size="35"></font></td>
+  </tr><img src=http://drewstar.superscripts.com/pix/test.jpg border=0?
+
+  <tr>
+    <td width="50%"><strong><small><font face="Arial">Expire Type</font></small></strong></td>
+    <td width="50%"><font SIZE="2" face="Arial"><select name="expiretype" size="1">
+      <option selected>make a selection</option>
+      <option value="impressions">impressions</option>
+      <option value="days">number of days</option>
+    </select></font></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong><small><font face="Arial">Duration (days or impressions)</font></small></strong></td>
+    <td width="50%"><font SIZE="2" face="Arial"><input type="text" name="duration" size="10"></font></td>
+  </tr>
+</table>
+
+<p><font SIZE="2"><font face="Arial"><input type="submit" value="Add Account"></font></p>
+</form>
+
+<form action="/cgi-bin/banner/admin/view.cgi" method="post">
+<input type="submit" value="View Ads">
+</form>
+
+
+<p>&nbsp;</p>
+</font>
+</body>
+</html>
+
