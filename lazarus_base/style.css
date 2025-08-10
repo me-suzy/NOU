@@ -1,0 +1,44 @@
+td {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  color: black;
+}
+
+h1 {
+  text-align: "center";
+}
+
+td.navi {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  color: black;
+}
+
+td.menuname {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  color: "#5555aa";
+  text-align: left;
+  background-color: white;
+}
+
+a.navi {
+  color: "#6666aa";
+  font-size: 12pt;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+a.navi:hover {
+  color: "#3333ee";
+  font-size: 12pt;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+}
+
+
+
+
+
+
