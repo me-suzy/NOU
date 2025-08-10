@@ -1,0 +1,205 @@
+<html>
+
+<head>
+<title>HELP MENU</title>
+</head>
+
+<body>
+
+<p align="center"><font color="#FF0000" face="Arial"><big><strong>VTERM HELP MENU</strong></big></font></p>
+
+<p align="center"><a href="http://www.superscripts.com/"><font color="#000000"
+face="Arial"><small>Created by Drew Star</small></font></a></p>
+
+<blockquote>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>View Clients</strong>
+  &nbsp;&nbsp;&nbsp; Allows you to see your current billing database clients.&nbsp; You can
+  edit, delete, or bill individual records by using the PROCESS buttons.&nbsp; Note that
+  entries highlighted in YELLOW are ready for billing.&nbsp; These accounts have been active
+  for longer than their normal billing cycle (CYCLE &gt; REBILL).&nbsp; Accounts highlighted
+  in RED have experienced problems with billing (card bounced, bad expiration date, card
+  rejected, etc).&nbsp; If you click on EDIT you can find out the specific problem with the
+  account and correct it by switching the STATUS drop down menu to CLEAR STATUS.</small></font></p>
+  <blockquote>
+    <p align="left"><font face="Arial" color="#FF0000"><strong><small>DIFFERENT HIGHLIGHT
+    COLORS MEAN DIFFERENT THINGS</small></strong></font></p>
+  </blockquote>
+  <blockquote>
+    <table border="0" cellPadding="0" cellSpacing="4" width="39%">
+      <tr>
+        <td bgColor="#ffff00" width="100%"><font face="Arial"><small>HIGHLIGHTED YELLOW = CLIENT
+        SCHEDULED TO BE BILLED</small></font></td>
+      </tr>
+      <tr>
+        <td width="100%"><font face="Arial"><small>NO HIGHLIGHT = CLIENT NOT DUE FOR BILLING</small></font></td>
+      </tr>
+      <tr>
+        <td bgColor="#ff0000" width="100%"><font face="Arial"><small>HIGHLIGHTED RED = THERE IS A
+        PROBLEM WITH THIS CLIENTS BILLING INFORMATION</small></font></td>
+      </tr>
+    </table>
+  </blockquote>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Download</strong>
+  &nbsp;&nbsp;&nbsp;&nbsp; Dumps the current billing database to your browser as a flat file
+  database.&nbsp; You can then save the updated database to your desktop for future use.
+  &nbsp;&nbsp; Make sure that you DO NOT DIRECTLY SAVE the browser output from the DOWNLOAD
+  feature.&nbsp; CLICK DOWNLOAD, then VIEW SOURCE, then save the text file that your browser
+  opens up.&nbsp; Save as a txt file and not html.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Add Client</strong>
+  &nbsp;&nbsp;&nbsp; Allows you to manually add a new client to your billing database.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Edit</strong>&nbsp;&nbsp;&nbsp;
+  The edit radio box causes the process button for that client to pull up an edit
+  form.&nbsp; You can make changes to the individual client records and make them permanent
+  by clicking on the submit button inside the edit menu.&nbsp; It will also bring up any
+  BILLING ERRORS previously experienced with the account being edited which can be corrected
+  by the STATUS pull down menu by selecting &quot;CLEAR STATUS&quot;.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Delete</strong>&nbsp;&nbsp;&nbsp;
+  The delete radio box causes the corresponding process button to delete the record from
+  your billing database.&nbsp; This is not reversible.&nbsp; To delete ALL of the accounts
+  and start over simply quit your browser.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Bill</strong>&nbsp;&nbsp;&nbsp;
+  The BILL radio box when checked causes the corresponding process button for that client to
+  bill their credit card through your authorize.net account.&nbsp; The billing will only
+  occur when the billing CYCLE exceeds the REBILL time.&nbsp; CYCLE is the number of days
+  since the last billing occurred.&nbsp; REBILL is the number of days between billing
+  cycles.&nbsp; Thus if CYCLE &gt; REBILL the account will be highlighted in yellow unless
+  there was a previous billing failure and it will be highlighted in red.&nbsp; If you wish
+  to alter the billing CYCLE use the edit menu to bump up the CYCLE value.&nbsp; Also note
+  that when you bill a client the CYCLE value will be reset to zero.&nbsp; The CYCLE value
+  will increment by 1 each day thereafter.&nbsp; Accounts that are not highlighted in YELLOW
+  (eg white or red) cannot be billed.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Notify</strong>&nbsp;&nbsp;&nbsp;
+  Clicking on the notify button will email billing messages to all the clients with bad
+  billing data informing them that they need to submit corrected billing information.&nbsp;
+  It will send the error message contained in the $RESPONSE field so your clients will know
+  what they need to do to correct their billing information.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>If you want to start
+  over</strong> &nbsp;&nbsp;&nbsp; If, for whatever reason, you want to completely start
+  over and clear out all the data simply quit your browser.&nbsp; This will dump all of the
+  information out of your browser.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Help</strong>
+  &nbsp;&nbsp;&nbsp; This pulls up the help menu.</small></font></p>
+  <p align="left"><font color="#000000" face="Arial"><small><strong>Upload</strong>&nbsp;&nbsp;&nbsp;
+  Click on the BROWSE button to locate your flatfile billing database.&nbsp; The database
+  must be created in a field delimited, flat file format using the PIPE | character to
+  separate fields.&nbsp; The fields must be arranged EXACTLY in the following order:</small></font></p>
+  <font size="1"><p><font color="#FF0000" face="Arial">$NAME|$ADDRESS|$CITY|$STATE|$ZIP|$COUNTRY|$PHONE|$EMAIL|$ACCTNO|$ABACODE|$BANKNAME|$CARDNUM|$EXPDATE|$AMOUNT|$REBILL|$CYCLE|$METHOD|$STATUS</font></font><font
+  color="#FF0000" face="Arial" size="1">|$RESPONSE</font></p>
+</blockquote>
+
+<blockquote>
+  <p><font size="2" color="#000000" face="Arial">Each field is described below</font></p>
+  <div align="center"><center><table border="0" width="54%" cellspacing="4" cellpadding="0">
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">FIELD</font></td>
+      <td width="67%" bgcolor="#000000"><font face="Arial" color="#FFFFFF"><small>Description</small></font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$NAME</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">The
+      cardholders name (first and last)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ADDRESS</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">Billing
+      address</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$CITY</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">Billing city</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$STATE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      state</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ZIP</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      zipcode</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$COUNTRY</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      country (optional)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$PHONE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      phone number</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$EMAIL</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      email address</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ACCTNO</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">checking
+      account number (if billing by check)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ABACODE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">checking
+      routing number (if billing by check)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$BANKNAME</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">checking
+      bank name (if billing by check)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$CARDNUM</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">credit card
+      number (if billing by credit card)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$EXPDATE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">expiration
+      date (if billing by credit card)&nbsp; format is monthyear (eg:&nbsp; 0202)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$AMOUNT</font><p>&nbsp;</td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">amount to
+      bill.&nbsp; must be followed by 2 decimal places.&nbsp; eg:&nbsp; 10.00</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$REBILL</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">days between
+      billing periods.&nbsp; eg:&nbsp; 30 for every 30 days</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$CYCLE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">days since
+      last billing.&nbsp; when this value exceeds the REBILL value billing may occur</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$METHOD</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">method of
+      billing.&nbsp; values must equal one of the following:&nbsp; ACH (for checking), Visa,
+      MasterCard, Discover,Amex, Diners Club, JCB.&nbsp; This field is case
+      sensitive.</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$STATUS</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">values equal
+      passed, failed or testing.&nbsp; If the last billing attempt failed this will cause the
+      entry to be highlighted in red.&nbsp; This value can be re-initialized in the edit
+      menu.&nbsp; This field value is generated by the billing software.</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$RESPONSE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">this field
+      contains error messages returned by authorize.net.&nbsp; The problem must be corrected in
+      the edit menu in order to bill successfully.</font><p>&nbsp;</td>
+    </tr>
+  </table>
+  </center></div>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>
+
