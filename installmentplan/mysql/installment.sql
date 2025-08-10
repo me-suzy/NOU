@@ -1,0 +1,21 @@
+CREATE TABLE installmentpeople (
+	ipaddress char(50) DEFAULT 'ipaddress' NOT NULL,
+	clientname char(200) DEFAULT 'clientname' NOT NULL,
+	dssusername char(12) DEFAULT 'dssusername' NOT NULL,
+	dsspassword char(12) DEFAULT 'dsspassword' NOT NULL,
+	ftphostname char(50) DEFAULT 'ftphostname' NOT NULL,
+	ftpusername char(25) DEFAULT 'ftpusername' NOT NULL,
+	ftppassword char(25) DEFAULT 'ftppassword' NOT NULL,
+	ftpserverpath char(200) DEFAULT 'ftpserverpath' NOT NULL,
+	downloadedfilename char(50) DEFAULT 'downloadedfilename' NOT NULL,
+	transactionumber char(12) DEFAULT 'transactionumber' NOT NULL,
+	subscriptionumber char(12) DEFAULT 'subscriptionumber' NOT NULL,
+	amountpaid char(12) DEFAULT 'amountpaid' NOT NULL,
+	normaldate char(50) DEFAULT 'normaldate' NOT NULL,
+	juleansignupdate int,
+	downloads int,
+	credits int,
+	counter int,
+	installments int,
+	PRIMARY KEY(dssusername,subscriptionumber,transactionumber)
+);
