@@ -1,0 +1,19 @@
+<HTML><HEAD><TITLE>Modify Horoscopes</TITLE></HEAD><BODY>
+<CENTER><H1>Modify Horoscopes</H1></CENTER>
+<BR>
+You can change all the horoscopes from this page.  Useful for your
+weekly or daily updates if you do not wish to edit the files manually.  N.B.
+if you use the web interface to do this you MUST CHMOD 666 dating/hscopes/*
+BEFORE you attempt this.  PLEASE NOTE: THIS WILL ONLY TAKE EFFECT IF YOU
+HAVE SPECIFIED NOT TO USE RANDOM HOROSCOPES.
+<BR><FORM action="modhs.cgi" method="post">
+Horoscope: <SELECT name=hs>
+<OPTION>Capricorn
+<OPTION>Leo
+<OPTION>Aquarius
+<OPTION value="Leo">Edit the HTML for more.
+</SELECT>
+<BR><TEXTAREA name=value cols=40 rows=7></TEXTAREA>
+<BR><INPUT type=submit value="Modify">
+</FORM>
+<BODY></HTML>
