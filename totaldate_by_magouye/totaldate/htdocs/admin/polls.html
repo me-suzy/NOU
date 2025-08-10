@@ -1,0 +1,28 @@
+<HTML><HEAD><TITLE>Editing The Polls</TITLE></HEAD><BODY>
+This page will let you change everything to do with polls... just
+select one of the options.
+
+<BR><BR><HR width=75%><BR>
+<B><U><CENTER><BIG>List Polls</B></U></CENTER></BIG><BR>
+<CENTER>
+<FORM action=listpolls.cgi><INPUT type=submit value="List Them"></FORM>
+</CENTER>
+
+<BR><BR><HR width=75%><BR>
+<B><U><CENTER><BIG>Add A Poll</B></U></CENTER></BIG><BR>
+<FORM action=addpoll.cgi>
+Question: <INPUT type=text name=q><BR>
+Answer 1: <INPUT type=text name=a1><BR>
+Answer 2: <INPUT type=text name=a2><BR>
+Answer 3: <INPUT type=text name=a3><BR>
+<INPUT type=submit value="Go!">
+</FORM>
+
+<BR><BR><HR width=75%><BR>
+<B><U><CENTER><BIG>Delete A Poll</B></U></CENTER></BIG><BR>
+<FORM action=delpoll.cgi>
+Poll ID: <INPUT type=text name=poll><BR>
+<INPUT type=submit value="Erase">
+</FORM>
+
+</BODY></HTML>
