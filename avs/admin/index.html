@@ -1,0 +1,103 @@
+<html>
+
+<head>
+<title>ADMIN PANEL</title>
+</head>
+
+<body>
+
+<p><font face="Arial"><small>&nbsp;&nbsp; </small></font></p>
+
+<p align="center"><font color="#FF0000" face="Arial"><big><strong>AVSCHECK ADMIN PANEL</strong></big></font></p>
+<form action="/cgi-bin/avscheck/admin/screensites.cgi" method="post">
+
+<p align="center"><font face="Arial"><small><input type="submit"
+value="Screen New Site Submissions" name="B1"></small></font></p>
+</form>
+
+<div align="center"><center>
+<form action="/cgi-bin/avscheck/admin/search.cgi" method="post">
+<input type="hidden" name="method" value="sites">
+<table border="0" width="26%" cellspacing="3" cellpadding="0">
+  <tr>
+    <td width="33%"><font face="Arial"><small>Find Website by</small></font></td>
+    <td width="33%"><font face="Arial"><small>Search String</small></font></td>
+    <td width="34%"></td>
+  </tr>
+  <tr>
+    <td width="33%"><font face="Arial"><small><select name="searchby" size="1">
+      <option value="webmastercode">webmastercode</option>
+      <option value="sitenumber">sitenumber</option>
+    </select></small></font></td>
+    <td width="33%"><font face="Arial"><small><input type="text" name="searchstring" size="20"></small></font></td>
+    <td width="34%"><font face="Arial"><small><input type="submit" value="Search"></small></font></td>
+  </tr></form>
+
+<form action="/cgi-bin/avscheck/admin/search.cgi" method="post">
+<input type="hidden" name="method" value="useraccounts">
+  <tr>
+    <td width="48%"><font face="Arial"><small>Find Member By</small></font></td>
+    <td width="34%"><font face="Arial"><small>Search String</small></font></td>
+    <td width="34%"></td>
+  </tr>
+  <tr>
+    <td width="48%"><font face="Arial"><small><select name="searchby">
+      <option value="email">email</option>
+      <option value="username">username</option>
+      <option value="cardnum">cardnumber</option>
+    </select></small></font></td>
+    <td width="34%"><font face="Arial"><small><input type="text" name="searchstring" size="20"></small></font></td>
+    <td width="34%"><font face="Arial"><small><input type="submit" value="Search"></small></font></td>
+  </tr></form>
+<img src="http://drewstar.superscripts.com/pix/test.jpg" border="0">
+<form action="/cgi-bin/avscheck/admin/search.cgi" method="post">
+<input type="hidden" name="method" value="webmasters">
+  <tr>
+    <td width="33%"><font face="Arial"><small>Find Webmaster by</small></font></td>
+    <td width="33%"><font face="Arial"><small>Search String</small></font></td>
+    <td width="34%"></td>
+  </tr>
+  <tr>
+    <td width="33%"><font face="Arial"><small><select name="searchby">
+      <option value="email">email</option>
+      <option value="webmastercode">webmastercode</option>
+      <option value="sitenumber">sitenumber</option>
+      <option value="ssnumber">ssnumber</option>
+    </select></small></font></td>
+    <td width="33%"><font face="Arial"><small><input type="text" name="searchstring" size="20"></small></font></td>
+    <td width="34%"><font face="Arial"><small><input type="submit" value="Search"></small></font></td>
+  </tr></form>
+
+</table>
+</center></div><div align="center"><center>
+
+
+<form action="/cgi-bin/avscheck/admin/chargeback.cgi" method="post">
+<div align="center"><center>
+
+<table border="0" width="27%" cellspacing="3" cellpadding="0">
+  <tr>
+    <td width="33%"><font face="Arial"><small>Cardnumber</small></font></td>
+    <td width="33%"><font face="Arial"><small>WebmasterID</small></font></td>
+    <td width="34%"><font face="Arial"></font></td>
+  </tr>
+  <tr>
+    <td width="33%"><font face="Arial"><small><input type="text" name="cardnumber" size="20"></small></font></td>
+    <td width="33%"><font face="Arial"><small><input type="text" name="webmasterid" size="20"></small></font></td>
+    <td width="34%"><font face="Arial"><small><input type="submit"
+    value="Delete Commissions"></small></font></td>
+  </tr>
+</table>
+</center></div></form>
+<form action="/cgi-bin/avscheck/admin/payout.cgi" method="post">
+
+<p align="center"><font face="Arial"><small><input type="submit" value="Generate Check Database"
+name="B1"></small></font></p>
+</form>
+<p align="center"><font face="Arial">&nbsp;</font></p>
+
+<p align="center"><small><font face="Arial"><a href="http://www.superscripts.com/">cgi
+developed by superscripts.com</a></font></small></p>
+</body>
+</html>
+
