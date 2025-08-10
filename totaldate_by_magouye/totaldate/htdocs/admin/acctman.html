@@ -1,0 +1,32 @@
+<HTML><HEAD><TITLE>Account Management</TITLE></HEAD><BODY>
+This page will let you change all kinds of options on user's accounts.  You
+should be able to control everything from here.
+<BR><BR><HR width=75%>
+<B><U><BIG><CENTER>Change A Password</B></U></BIG></CENTER><BR>
+<FORM action=chpass.cgi method=post>
+<SMALL>Note: To unsuspend an account just change a users password here!</SMALL>
+UID: <INPUT type=text name=u>
+<BR>Password: <INPUT type=text name=p>
+<BR><INPUT Type=submit value="Change Password!">
+</FORM>
+<BR><BR><HR width=75%>
+<B><U><BIG><CENTER>Suspend An Account</B></U></BIG></CENTER><BR>
+<FORM action=suspend.cgi method=post>
+<SMALL>Note: To unsuspend an account just change a users password above...</SMALL>
+UID: <INPUT type=text name=u>
+<BR><INPUT type=submit value="Suspend UID">
+</FORM>
+<BR><BR><HR width=75%>
+<B><U><BIG><CENTER>Erase An Account</B></U></BIG></CENTER><BR>
+<FORM action=kill.cgi method=post>
+UID: <INPUT type=text name=u>
+<BR><INPUT type=submit value="Erase Account... no further confirmation"></FORM>
+
+<BR><BR><HR width=75%>
+<B><U><BIG><CENTER>Modify Account Status</B></U></BIG></CENTER><BR>
+<FORM action=paid.cgi method=post>
+UID: <input type=text name=u> is now <SELECT name=val><OPTION value=0>Not paid for<OPTION value=1>Paid for</SELECT>
+<BR><INPUT type=submit value="Modify">
+
+</FORM>
+</BODY></HTML>
