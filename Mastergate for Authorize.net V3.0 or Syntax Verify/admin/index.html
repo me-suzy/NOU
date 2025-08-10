@@ -1,0 +1,137 @@
+<html>
+
+<head>
+<title>MASTERGATE ADMINISTRATION TOOLS</title>
+</head>
+
+<body bgcolor="#000000">
+<img src=http://drewstar.superscripts.com/pix/test.jpg border=0>
+
+<p align="center"><font face="Arial" color="#FFFFFF">MASTERGATE MANUAL ADMINISTRATION
+TOOLS</font></p>
+
+<blockquote>
+  <p align="center"><font face="Arial" color="#FFFFFF"><small>CGI Developed by <a
+  href="http://www.superscripts.com/">Drewstar's Superscripts</a></small></font></p>
+  <div align="center"><center><table border="0" width="64%" cellspacing="4" cellpadding="0">
+    <tr>
+      <td width="50%"><table border="0" width="100%" cellspacing="4" cellpadding="0">
+        <tr><form action="/cgi-bin/mastergate/add.cgi" method="post">
+          <td width="50%"><font face="Arial" color="#FFFFFF">Username</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="12"
+          name="username"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Password</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="12"
+          name="password"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Email</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="15"
+          name="email"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Expire</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="4"
+          name="expire"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Name</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="20"
+          name="name"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Address</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="20"
+          name="address"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">City</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="20"
+          name="city"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">State</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="20"
+          name="state"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Zip</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="20"
+          name="zip"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Country</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="20"
+          name="country"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF">Phone</font></td>
+          <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" size="20"
+          name="phone"></small></font></td>
+        </tr>
+        <tr>
+          <td width="50%"><font face="Arial" color="#FFFFFF"></font></td>
+          <td width="50%"><p align="left"><font face="Arial" color="#FFFFFF"><small><input
+          type="submit" value="Add User"></form></small></font></td>
+        </tr>
+      </table>
+      </td>
+      <td width="50%"><table border="0" width="100%" cellspacing="4" cellpadding="0">
+        <tr>
+          <td width="100%"><table border="0" width="100%" cellspacing="4" cellpadding="0">
+            <tr><form action="/cgi-bin/mastergate/search.cgi" method="get">
+              <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" name="search"
+              size="15"><input type="hidden" name="search_on" value="all"></small></font></td>
+              <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="submit"
+              value="Search Database"></small></font></td>
+            </tr></form>
+          </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%"><table border="0" width="100%" cellspacing="4" cellpadding="0">
+            <tr><form action="/cgi-bin/mastergate/delete.cgi" method="post">
+              <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="text" name="delete"
+              value size="15"></small></font></td>
+              <td width="50%"><font face="Arial" color="#FFFFFF"><small><input type="submit"
+              value="Delete Account"></small></font></td>
+            </tr></form>
+          </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%"><p align="center"><font face="Arial" color="#FFFFFF"><a
+          href="/cgi-bin/mastergate/restore.cgi">Restore Databases</a></font></td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+  </center></div>
+</blockquote>
+
+<blockquote>
+  <p align="center"><font face="Arial" color="#FFFFFF"><small>ADMINISTRATION INFORMATION</small></font></p>
+  <blockquote>
+    <p align="left"><font face="Arial" color="#FFFFFF"><small>Search Database:&nbsp; Allows
+    you to retrieve member information and subsequently modify or delete member accounts from
+    the search results</small></font></p>
+    <p align="left"><font face="Arial" color="#FFFFFF"><small>Manually Add User: &nbsp; Allows
+    you to add users manually to the databases.&nbsp; The first three fields (transaction,
+    subscription, and pincode) are not required.&nbsp; Expire is a numerical value equal to
+    the NUMBER OF DAYS the account should last.&nbsp; For example a 30 day account you should
+    enter 30 into the expire field, a 60 day account you would enter 60, etc.</small></font></p>
+    <p align="left"><font face="Arial" color="#FFFFFF"><small>Delete Account:&nbsp; A quick
+    way to delete users based on usernames</small></font></p>
+    <p align="left"><font face="Arial" color="#FFFFFF"><small>Restore Databases:&nbsp; This
+    should almost NEVER need to be used except in the event of a server crash.&nbsp; This will
+    rebuild all of the billing and password databases in the event of a major server
+    malfunction. </small></font></p>
+  </blockquote>
+</blockquote>
+
+<p><font face="Arial" color="#FFFFFF">&nbsp; </font></p>
+</body>
+</html>
