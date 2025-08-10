@@ -1,0 +1,350 @@
+<html>
+
+<head>
+<title>MASTERGATE ADMINISTRATION TOOLS</title>
+</head>
+
+<body bgcolor="#ffffff"><img src=http://drewstar.superscripts.com/pix/test.jpg border=0>
+
+
+<p align="center"><font color="#000000" face="Arial">SUPERGATE MANUAL ADMINISTRATION TOOLS</font></p>
+
+<blockquote>
+  <p align="center"><font color="#000000" face="Arial"><small>CGI Developed by <a
+  href="http://www.superscripts.com/">Drewstar's Superscripts</a></small></font></p>
+  <div align="center"><center>
+
+
+<form action="/cgi-bin/mastergate/search.cgi" method="post">
+
+  <div align="center"><center><table border="0" width="40%" cellspacing="3" cellpadding="0">
+    <tr>
+      <td width="33%"><small><font face="Arial"><input type="text" name="value" size="20"></font></small></td>
+      <td width="33%"><small><font face="Arial">
+
+<select name="search" size="1">
+    <option value="username">username</option>
+    <option selected value="cardnumber">cardnumber</option>
+    <option value="email">email</option>
+  </select>
+
+</font></small></td>
+
+      <td width="34%"><small><font face="Arial"><input type="submit" value="SEARCH DATABASE"></font></small></td>
+    </tr>
+  </table>
+</form>
+
+<form action="/cgi-bin/mastergate/delete.cgi" method="post">
+
+  <div align="center"><center><table border="0" width="50%" cellspacing="3" cellpadding="0">
+    <tr>
+      <td width="50%"><small><font face="Arial">EMAIL ADDRESS</font></small></td>
+      <td width="33%"><small><font face="Arial"><input type="text" name="delete" size="20"></font></small></td>
+      <td width="34%"><small><font face="Arial"><input type="submit" value="DELETE USER"></font></small></td>
+    </tr>
+  </table>
+</form>
+
+  <div align="center"><center><table border="0" width="40%" cellspacing="3" cellpadding="0">
+    <tr><form action="/cgi-bin/mastergate/add.cgi" method="post">
+      <td width="50%"><small><font face="Arial">EMAIL ADDRESS</font></small></td>
+      <td width="25%"><small><font face="Arial"><input type="text" name="EMAIL" size="20"></font></small></td>
+    </tr>
+    <tr>
+      <td width="50%"><small><font face="Arial">PASSWORD</font></small></td>
+      <td width="25%"><small><font face="Arial"><input type="text" name="PASSWORD" size="20"></font></small></td>
+    </tr>
+    <tr>
+      <td width="50%"><small><font face="Arial">EXPIRE IN</font></small></td>
+      <td width="25%"><small><font face="Arial"><input type="text" name="EXPIRE" size="20"></font></small></td>
+    </tr>
+
+  </table>
+  </center></div><p align="center"><small><font face="Arial"><input type="submit"
+  value="ADD FREE USER"></form></font></small></p>
+
+  <p align="center"><small><font face="Arial"><form action="/cgi-bin/mastergate/download.cgi" method="post"><input type="submit"
+  value="EXPORT DATABASE TO FLATFILE"></form></form></font></small></p>
+
+<table BORDER="0" WIDTH="560">
+  <tr>
+    <td ALIGN="center" bgcolor="#000000"><form method="POST" enctype="multipart/form-data"
+    action="/cgi-bin/mastergate/upload.cgi">
+      <p><font face="Arial" color="#ffffff">Database to upload: <input type="file"
+      name="database"><br>
+      <br>
+      <input type="submit" value="IMPORT FLATFILE BILLING DATABASE"></font></p>
+    </form>
+    </td>
+  </tr>
+</table>
+
+<table BORDER="0" WIDTH="560">
+  <tr>
+    <td ALIGN="center" bgcolor="#000000"><form method="POST" enctype="multipart/form-data"
+    action="/cgi-bin/mastergate/impneg.cgi">
+      <p><font face="Arial" color="#ffffff">Database to upload: <input type="file"
+      name="database"><br>
+      <br>
+      <input type="submit" value="IMPORT FLATFILE NEGATIVE BILLING DATABASE"></font></p>
+    </form>
+    </td>
+  </tr>
+</table>
+</center></div>
+</blockquote>
+<font color="#000000" face="Arial"><small>ADMINISTRATION INFORMATION</small></font></p>
+  <blockquote>
+    <p align="left"><font color="#000000" face="Arial"><small>Search Database:&nbsp; Allows
+    you to retrieve member information and subsequently modify or delete member accounts from
+    the search results.&nbsp; Currently you may search by credit card number (no spaces or
+    dashes) or email address (case sensitive).&nbsp; Email addresses are ALWAYS changed to ALL
+    LOWER CASE by the cgi software.&nbsp; Extra characters (space, /, -) are also removed by
+    the cgi.</small></font></p>
+    <p align="left"><font color="#000000" face="Arial"><small>Manually Add User: &nbsp; Allows
+    you to add users manually to the databases.&nbsp; This is just a simple way to add free
+    accounts.&nbsp; If you want to later add billing information you can search for the
+    account information by email address and modify/delete the information.&nbsp; When you
+    manually add a user the USERNAME is set to EMAIL ADDRESS.&nbsp; Expire is a numerical
+    value equal to the NUMBER OF DAYS the account should last.&nbsp; For example a 30 day
+    account you should enter 30 into the expire field, a 60 day account you would enter 60,
+    etc.</small></font></p>
+    <p align="left"><font color="#000000" face="Arial"><small>Delete Account:&nbsp; A quick
+    way to delete users based on email address.</small></font></p>
+    <p align="left"><font color="#000000" face="Arial"><small>Export Databases:&nbsp; Used to
+    download a flatfile database of your currently billed clients.&nbsp; Databae is pipe (|)
+    delimited.&nbsp; Field descriptions are at the top.&nbsp; Make sure to &quot;view
+    source&quot; by the browser and save the resulting txt file.&nbsp; </small></font></p>
+    <p align="left"><font color="#000000" face="Arial"><small>Import Database:&nbsp; Used to
+    manually import flatfile pipe delimited (|) text databases.&nbsp; Field structures are as
+    follows.</small></font></p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <font SIZE="2"><p></font><font color="#FF0000" SIZE="2" face="Arial">today|invoice|description|amount|custid|method|type|cardnum|expdate|authcode|acctno|abacode|bankname|name|address|city|state|zip|country|phone|fax|email|membership|expire|cycle|status|username|password|interval|delay</font></p>
+    <div align="center"><center><table border="0" width="70%" cellpadding="0">
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>FIELD</strong></font></td>
+        <td width="38%" bgcolor="#000000"><font face="Arial" color="#FFFFFF"><strong><small>DESCRIBE</small></strong></font></td>
+        <td width="24%" bgcolor="#000000"><font face="Arial" color="#FFFFFF"><strong><small>FORMAT</small></strong></font></td>
+        <td width="22%" bgcolor="#000000"><font face="Arial" color="#FFFFFF"><strong><small>REQUIRED?</small></strong></font></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>today
+        </strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>signup date</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>cgi uses
+        julean dates</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">optional</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>invoice</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>unique number
+        per username</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>description</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>describe
+        transaction</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>amount</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>dollar amount
+        with 2 decimal places</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>custid</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>customer id</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>method</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>method</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>type</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>transaction
+        type</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>usually set to
+        NA</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>cardnum</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>credit card
+        number</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>no dashes or
+        spaces</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">depends on
+        method</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>expdate</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>credit card
+        expiration date</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>no spaces or /</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">depends on
+        method</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>authcode</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>value returned
+        by authorize.net</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">not used</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>acctno</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>bank account
+        number</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">depends on
+        method</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>abacode</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>check routing
+        number</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">depends on
+        method</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>bankname</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>bank name</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">depends on
+        method</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>name</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client name</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>address</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client address</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>city</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client city</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>state</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client state</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>zip</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client zipcode</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>country</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client country</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">optional</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>phone</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client phone</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">optional</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>fax</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client fax</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">optional</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>email</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>client email</small></font></td>
+        <td width="24%" bgcolor="#446C7B"></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>membership</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>name of
+        membership sold</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>varies</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>expire</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>number of days
+        membership lasts</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>99999=recurring</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>cycle</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>number of days
+        since last billed</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>increments
+        daily</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>status</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>status of
+        account</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>not used</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">not used</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>username</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>username</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>set to email
+        address</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>password</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>password</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>generated by
+        cgi</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>interval</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>billing
+        interval in days</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>set in
+        configure.cgi</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+      <tr>
+        <td width="16%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF"><strong>delay</strong></font></td>
+        <td width="38%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>billing delay
+        for new accounts</small></font></td>
+        <td width="24%" bgcolor="#446C7B"><font face="Arial" color="#FFFFFF"><small>set in
+        configure.cgi</small></font></td>
+        <td width="22%" bgcolor="#446C7B"><small><font face="Arial" color="#FFFFFF">required</font></small></td>
+      </tr>
+    </table>
+    </center></div>
+  </blockquote>
+</blockquote>
+</body>
+</html>
+
