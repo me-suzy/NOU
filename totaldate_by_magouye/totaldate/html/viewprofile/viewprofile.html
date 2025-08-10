@@ -1,0 +1,48 @@
+<HTML><BODY>
+
+<!-- N.B. $user == the UID of who we're scanning here... OUR uid is $ourid-->
+
+<IMG src="$pic" alt="Picture of $user">
+<A href="$voiceget"><IMG src="$voice" alt = "Link to voice file if existant"></A>
+<P><BIG><B>Hi! I'm $nick ($user)</B></BIG></P>
+
+<P>I'm $age years old and consider myself to be a $ethnic $sex.  I am looking
+for $rtype relationship.  My sexual-orientation is $orientation.  I feel as
+if I can identify with $star.  You may wish to know that I am $mstatus.</P>
+
+<P>I live in the city of $city ($state) which is in $country.</P>
+
+<P>Physical attributes:<BR>
+<LI>Height: $height
+<LI>Weight: $weight
+<LI>Hair Colour: $hair
+<LI>Eye Colour: $eyes
+</P>
+
+<P>Education/Career:<BR>
+<LI>Educative level is: $education
+<LI>Intelligence: $intelligence
+<LI>Job: $job
+<LI>Career Importance: $cimportance
+<LI>Income (anually): $income
+</P>
+
+<P>Miscellaneous:<BR>
+<LI>My religion is: $religion and I consider its importance to be $rimp
+<LI>My star sign is: $horoscope
+<LI>If I were in high school today I would be classed as: $hsclass
+<LI>I drink: $drinking
+<LI>I smoke: $smoking
+<LI>I take drugs: $drugs
+
+<P>I describe myself as: <I>$me</I></P>
+
+<P>My ideal partner would be: <I>$idealp</I></P>
+
+<P>User ranking: <I>$urank%</I>
+<BR><BR><HR width=75%><BR>
+Rank the user! <FORM method=post action=dorank.cgi><INPUT type=hidden name=u value=$ourid><INPUT type=hidden name=c value=$cookie><INPUT type=hidden name=who value=$user>
+Score: <select name=score><OPTION>0<OPTION>1<OPTION>2<OPTION>3<OPTION>4<OPTION>5<OPTION>6<OPTION>7<OPTION>8<OPTION>9<OPTION>10</SELECT>
+<BR><INPUT type=submit value="Rank Them!"></FORM>
+
+</HTML>
