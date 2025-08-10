@@ -1,0 +1,97 @@
+<html>
+
+<head>
+<title>IBILL PROCESSOR ADMINISTRATION TOOLS</title>
+</head>
+
+<body bgcolor="#ffffff">
+<img src=http://drewstar.superscripts.com/pix/test.jpg border=0>
+
+<p align="center"><font face="Arial" color="#000000">IBILL MANUAL ADMINISTRATION TOOLS</font></p>
+
+<blockquote>
+  <p align="center"><font face="Arial" color="#000000">CGI Developed by <a
+  href="http://www.superscripts.com/">Drewstar's Superscripts</a></font></p>
+  <form method="get" action="/cgi-bin/mastergate/search.cgi">
+    <p><font face="Arial" color="#000000"><small>SEARCH FOR:&nbsp; <input type="text"
+    name="search" size="30"> &nbsp; FIELD: <select name="search_on" size="1">
+      <option value="all" selected>All</option>
+      <option value="username">username</option>
+      <option value="password">password</option>
+      <option value="name">name</option>
+      <option value="email">email</option>
+      <option value="pincode">pincode</option>
+      <option value="transaction">transaction</option>
+      <option value="subscription">subscription</option>
+      <option value="date">date</option>
+      <option value="expire">expire</option>
+    </select> <input type="submit" value="Search Database"></small></font></p>
+  </form>
+  <form action="/cgi-bin/mastergate/add.cgi" method="POST">
+    <p><font face="Arial" color="#000000"><small>OPTIONAL FIELDS:&nbsp; Transaction: <input
+    type="text" size="7" maxlength="7" minlength="7" name="transaction" value="%%TRAN?">
+    &nbsp; Subscription:&nbsp; <input type="text" size="7" maxlength="7" minlength="7"
+    name="subscription" value="%%REBILL?">&nbsp; Pincode:&nbsp; <input type="text" size="7"
+    maxlength="7" minlength="7" name="pincode" value="%%CODE?"> <br>
+    Username: <input type="text" size="12" maxlength="12" name="username" minlength="8">
+    Password: <input type="text" size="12" maxlength="12" name="password" minlength="8">
+    Expire:<input type="text" size="12" maxlength="12" name="expire" minlength="8"> <input
+    type="submit" value="Manually Add User"> </small></font></p>
+  </form>
+  <form ACTION="/cgi-bin/mastergate/delete.cgi" METHOD="POST">
+    <p><font face="Arial" color="#000000"><small>USERNAME: <input type="text" name="delete"
+    value size="20"><input type="submit" value="Delete Account"></small></font></p>
+  </form>
+  <form ACTION="/cgi-bin/mastergate/count.cgi" METHOD="POST">
+    <p><font face="Arial" color="#000000"><small><select name="pinfile" size="1">
+      <option selected value="/path/to/1234567">1234567</option>
+      <option value="/path/to/2345678">2345678</option>
+    </select> <input type="submit" value="Check Pincode Level"> </small></font></p>
+  </form>
+  <form action="https://secure.ibill.com/cgi-win/ccard/ccrebill.exe" method="POST">
+    <input type="hidden" name="reqtype" value="checkcancel"><p><font face="Arial"
+    color="#000000">Account: <select name="account" size="1">
+      <option selected value="1234567">1234567</option>
+      <option value="2345678">2345678</option>
+    </select> Subscription ID: <input type="text" name="rin" size="20" maxlength="10"> <input
+    type="submit" value="Cancel Recurring Billing" NAME="submit"> </font></p>
+  </form>
+</blockquote>
+<img src="http://drewstar.superscripts.com/pix/test.jpg" border="0">
+
+<blockquote>
+  <p align="center"><strong><font face="Arial" color="#000000"><small>ADMINISTRATION
+  INFORMATION</small></font></strong></p>
+  <p align="left"><font face="Arial" color="#000000"><small>Search Database:&nbsp; Allows
+  you to retrieve member information and subsequently modify or delete member accounts from
+  the search results.&nbsp; Note that this software uses Julean dates to keep track of
+  accounts.&nbsp;&nbsp; A Julean date is simply the number of days since Jan 1, 1992.
+  &nbsp; Today (August 8, 1999 is Julean Date 2778).&nbsp; After doing a search, if you want
+  to cancel an account immediately simply hit the DELETE ACCOUNT button.&nbsp; If you want
+  the account to expire 24 days from TODAY change the SIGNUP DATE field to the current
+  Julean Date (see the top of the search page).&nbsp; Then change the EXPIRE FIELD to 24.
+  &nbsp; When you click the MODIFY BUTTON the account will be updated to expire 24 days from
+  TODAY.</small></font></p>
+  <p align="left"><font face="Arial" color="#000000"><small>Manually Add User: &nbsp; Allows
+  you to add users manually to the databases.&nbsp; The first three fields (transaction,
+  subscription, and pincode) are not required.&nbsp; Expire is a numerical value equal to
+  the NUMBER OF DAYS the account should last.&nbsp; For example a 30 day account you should
+  enter 30 into the expire field, a 60 day account you would enter 60.&nbsp; If you never
+  want the account to expire use 99999.</small></font></p>
+  <p align="left"><font face="Arial" color="#000000"><small>Delete Account:&nbsp; A quick
+  way to delete users based on usernames</small></font></p>
+  <p align="left"><font face="Arial" color="#000000"><small>Check Pincode Level: This value
+  will provide an ESTIMATE of your pincodes remaining.&nbsp; The value may be off by 1
+  pincode.&nbsp; IBILL automatically notifies you when your pincodes are low so this is only
+  a secondary device for you to monitor your account activities.&nbsp; IBILL counts them for
+  you on their servers.</small></font></p>
+  <p align="left"><font face="Arial" color="#000000"><small>Cancel Recurring Billing:&nbsp;
+  This form allows you to quickly cancel billing for a particular user based on their
+  subscription ID.&nbsp; You can make this form field available to your users to allow them
+  to cancel their billing on their own.</small></font></p>
+</blockquote>
+
+<p><font face="Arial" color="#000000">&nbsp; </font></p>
+</body>
+</html>
+
