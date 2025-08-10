@@ -1,0 +1,11 @@
+<!---- As well as the standard $user and $nick we also have $bbnick $bbid
+	$bbcomment.  You may wish to use a table of some sort?
+	You may wish to have links to sendmessage here whereby
+	clicking on a nick sends a message... its up to you.>
+
+<LI>$bbnick ($bbid) <BR>
+<SMALL>$bbcomment</SMALL><BR>
+<FORM method=post action=bbook_mod.cgi><INPUT type=hidden
+name=u value=$user><INPUT type=hidden name=c value=$cookie><INPUT type=hidden
+name=type value="rem"><INPUT type=hidden name=nick value=$bbnick><INPUT
+type=submit value="Remove from List"></FORM>
