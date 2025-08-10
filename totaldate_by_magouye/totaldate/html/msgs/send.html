@@ -1,0 +1,13 @@
+<HTML><BODY>
+<FORM method=post action=sendmsg.cgi>
+<INPUT TYPE=hidden name=u value=$user>
+<INPUT TYPE=hidden name=c value=$cookie>
+To [nickname]: <INPUT type=text value="$to" name=to> (<A href="bbook_list.cgi?u=$user&c=$cookie">Black Book</A>)
+<BR>
+Sujbect: <INPUT type=text value="$subject" name=subject>
+<BR>
+Body: <TEXTAREA name=body>$body</TEXTAREA>
+<BR>
+<INPUT type=SUBMIT value=Send>
+</FORM>
+</BODY></HTML>
