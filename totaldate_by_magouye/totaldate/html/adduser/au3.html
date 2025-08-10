@@ -1,0 +1,34 @@
+<HTML><BODY>
+Please fill in all the below details... then click the button.
+<BR>
+<!--    In reality you will use DROP DOWN BOXES... these will mean that
+        all user answers will be of a set list... this will ensure actual
+        accurate searches.   I can't stress this enough... USE DROP DOWN BOXES
+        I JUST DIDN'T HAVE TIME-->
+<FORM action=audo.cgi method=post>
+
+Sex: <input type=text name=sex><BRInclue yourself in promotions [1|0]: <input type=text name=include_promotions><BR>
+May we give your info out? [1|0]: <input type=text name=info_giveout><BR>
+How did you hear about us? <input type=text name=how_hear><BR>
+Ethnicity [white/black/etc.]: <input type=text name=ethnicity><BR>
+Want relationship type [sexual/friendship/etc.]: <input type=text name=rtype><BR>
+Sexual orientation: <input type=text name=sexorientation><BR>
+Height [above average/average/shorty]: <input type=text name=height><BR>
+Weight [fat/average/anerexic]: <input type=text name=weight><BR>
+Current Relationship Status [marriage/single/divorced/etc.]: <input type=text name=mstatus><BR>
+<HR width=25%>
+Your hint: <INPUT type=text name=hintq value="my mother's maiden name"><BR>
+Answer to hint: <INPUT type=text name=hinta><BR>
+<INPUT type=hidden name=password1 value="$apass">
+<INPUT type=hidden name=password2 value="$apass">
+<INPUT type=hidden name=nick value="$anick">
+<INPUT type=hidden name=email value="$aemail">
+<INPUT type=hidden name=name value="$aname">
+<input type=hidden name=city value="$acity">
+<input type=hidden name=state value="$astate">
+<input type=hidden name=country value="$acountry">
+<input type=hidden name=bd_day value="$abd_day">
+<input type=hidden name=bd_month value="$abd_month">
+<input type=hidden name=bd_year value="$abd_year">
+<INPUT type=submit value="Add account">
+</FORM>
