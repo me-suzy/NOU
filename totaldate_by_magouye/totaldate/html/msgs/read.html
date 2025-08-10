@@ -1,0 +1,31 @@
+<HTML><BODY>
+Your message is as follows:-
+<B>From:</B><I> $from_nick ($from_id)</I><BR>
+<B>Subject:</B><I> $subject</I><BR><BR>
+<B>BODY:</B><BR>
+<CENTER>
+<TEXTAREA width=50% height=10>$body</TEXTAREA>
+</CENTER>
+<BR>
+<BR>
+<FORM method=post action=smhtml.cgi><INPUT type=hidden name=u value=$user>
+<INPUT type=hidden name=c value=$cookie><INPUT type=hidden name=subject
+value="Re: $subject"><INPUT type=hidden name=to value=$from_nick><INPUT type=
+hidden name=body value="In response to your message on TotalDate...">
+<INPUT type=submit value=Reply></FORM>
+
+<FORM method=post action=delmsg.cgi><INPUT type=hidden name=u value=$user>
+<INPUT type=hidden name=c value=$cookie><INPUT type=hidden name=msg value=$mid>
+<INPUT type=submit value=Delete></FORM>
+
+<FORM method=post action=ignore.cgi><INPUT type=hidden name=u value=$user>
+<INPUT type=hidden name=c value=$cookie><INPUT type=hidden name=who value=$from_nick>
+<INPUT TYPE=hidden name=type value=add><INPUT type=submit value="Ignore User"></FORM>
+
+<BR>
+<FORM method=post action=bbook_mod.cgi><INPUT type=hidden name=u value=$user>
+<INPUT type=hidden name=c value=$cookie><INPUT type=hidden name=type value=add>
+<INPUT type=hidden name=nick value=$from_nick>
+Comment: <input type=text name=comment><BR><input type=submit value="Add To
+Black Book">
+</BODY></HTML>
