@@ -1,0 +1,64 @@
+<html>
+
+<head>
+<title>Matchmasters Pro Admin</title>
+</head>
+
+<body bgcolor="white">
+<img src=http://drewstar.superscripts.com/pix/test.jpg border=0>
+
+<p align="center"><font face="Arial" color="#000000"><strong><big>Matchmasters Pro Admin
+Panel</big></strong></font></p>
+
+<form action="/cgi-bin/matchmasters/admin/admin.cgi" method="post" align="center">
+  <div align="center"><center><table border="0" width="11%" cellpadding="0">
+    <tr>
+      <td width="28%" bgcolor="#FF0080"><font face="Arial" color="#FFFFFF"><strong><small>Function</small></strong></font></td>
+      <td width="38%" bgcolor="#FF0080"><font face="Arial" color="#FFFFFF"><strong><small>Username</small></strong></font></td>
+      <td width="34%" bgcolor="#FF0080"></td>
+    </tr>
+    <tr>
+      <td width="28%"><small><font face="Arial"><select name="function" size="1">
+        <option selected value="login">login to users account</option>
+        <option value="edit">edit users profile</option>
+        <option value="delete">delete user from system</option>
+      </select></font></small></td>
+      <td width="38%"><font face="Arial"><small><small><input type="text" name="username"
+      size="12" maxlength="12"></small></small></font></td>
+      <td width="34%"><small><font face="Arial"><small><input type="submit" value="Submit"></small></font></small></td>
+    </tr>
+  </table>
+  </center></div>
+</form>
+
+
+<div align="center"><center>
+<form action="/cgi-bin/matchmasters/admin/quemail.cgi" method="post" align="center">
+<table border="0" width="11%" cellpadding="0">
+  <tr>
+    <td width="50%" bgcolor="#FF0080"><font face="Arial" color="#FFFFFF"><strong><small>Subject</small></strong></font></td>
+    <td width="50%" colspan="2"><font face="Arial"><small><small><input type="text"
+    name="subject" size="35"></small></small></font></td>
+  </tr>
+  <tr>
+    <td width="50%" bgcolor="#FF0080"><font face="Arial" color="#FFFFFF"><strong><small>Message</small></strong></font></td>
+    <td width="50%" colspan="2"><small><font face="Arial"><textarea rows="7" name="message"
+    cols="30"></textarea></font></small></td>
+  </tr>
+  <tr>
+    <td width="33%"><font face="Arial" color="#FFFFFF"><small><small><input type="submit"
+    value="Email Users"></small></small></font></td></form>
+<form action="/cgi-bin/matchmasters/admin/killmail.cgi" method="post" align="center">
+    <td width="33%"><p align="center"><small><font face="Arial"><small><input type="submit"
+    value="Kill Bulk Mail"></small></font></small></td></form>
+<form action="/cgi-bin/matchmasters/admin/count.cgi" method="post" align="center">
+    <td width="33%"><p align="right"><small><font face="Arial"><small><input type="submit"
+    value="Count Users"></small></font></small></td></form>
+  </tr>
+</table>
+</center></div>
+<p align="center"><a href="http://www.superscripts.com/"><small><font face="Arial">cgi
+developed by drew star</font></small></a></p>
+</body>
+</html>
+
