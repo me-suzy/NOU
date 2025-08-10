@@ -1,0 +1,24 @@
+<HTML><HEAD><TITLE>Random Horoscope Updater</TITLE></HEAD><BODY>
+This page will let you update, erase and view your random horoscope list.  This
+will only be used if you have specified to use random horoscopes.  If you
+have nto specified the options, the horoscopes will be saved but not used.
+<BR><BR><HR width=75%><BR>
+<B><U><BIG><CENTER>Upload Horoscopes</B></U></BIG></center>
+<BR>Just simply type in each horoscope and press enter after each one.
+<CENTER>
+<FORM action=hsmass.cgi method=post><BR>
+<TEXTAREA cols=60 rows=10 name=hscopes></TEXTAREA><br></center>
+<INPUT type=submit value="Upload!"></BR>
+</FORM>
+
+<BR><BR><HR width=75%><BR>
+<B><U><BIG><CENTER>View Horoscopes</B></U></BIG></CENTER>
+<CENTER><FORM action=viewmasshs.cgi method=post><BR>
+<INPUT type=submit value="View Horoscope List"></FORM>
+
+<BR><BR><HR width=75%><BR>
+<B><U><BIG><CENTER>Erase ONE Mass Horoscope</B></U></BIG></CENTER>
+<CENTER><FORM action=killmasshs.cgi method=post><BR>
+ID: <INPUT type=text name=id><BR>
+<INPUT type=submit value="Erase Mass Horoscope"></FORM>
+
