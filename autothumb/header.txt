@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>THUMBNAIL BROWSER RESULTS BY SUPERSCRIPTS.COM CGI SCRIPTS</title>
+<meta name="description" content="SUPERSCRIPTS.COM AUTOMATIC THUMBNAIL CGI SCRIPT">
+<meta NAME="keywords" CONTENT="thumbnail cgi script,automatic thumbnail maker cgi script">
+<meta name="robots" content="index">
+</head>
+
+<body bgcolor="#ffffff" alink="#000000" vlink="#000000" link="#000000">
+<center>
+
+
+<center>
+<font face="Arial"><big><strong>CUSTOM HEADER AREA</strong></big></font></p>
+</font>
+</center>
+
+<table border="0" width="1%" cellpadding="0">
+  <tr>
