@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<title>Admin Panel</title>
+<meta name="Microsoft Border" content="none">
+</head>
+
+<body>
+
+<p><font face="Arial" color="#FF0000"><big><strong>Admin Panel</strong></big></font></p>
+<font SIZE="2" face="Arial">
+
+<form action="/cgi-bin/adv/admin/stats.cgi" method="post">
+  <p><input type="submit" value="Get Statistics"></font></p>
+</form>
+
+<p><big><font face="Arial" color="#FF0000"><strong>Add Account</strong></font></big></p>
+
+<form action="/cgi-bin/adv/admin/add.cgi" method="post">
+  <table border="0" width="62%" cellpadding="0">
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Username</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="username" size="12"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Password</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="password" size="12"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Email Address</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="email" size="35"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Clickthrough URL</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="clickthroughurl"
+      size="35" value="http://"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Banner URL</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="bannerurl" size="35"
+      value="http://"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Expire Type</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><select name="expiretype" size="1">
+        <option selected>make a selection</option>
+        <option value="pay per impression">pay per impression</option>
+        <option value="pay per day">pay per day</option>
+        <option value="pay per click">pay per click</option>
+      </select></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Duration (days, impressions or clicks)</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="duration" size="10"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Price Per Click</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="priceperclick"
+      size="10"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Price Per Impression</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="priceperimpression"
+      size="10"></font></td>
+    </tr>
+    <tr>
+      <td width="43%"><strong><small><font face="Arial">Price Per Day</font></small></strong></td>
+      <td width="77%"><font SIZE="2" face="Arial"><input type="text" name="priceperday"
+      size="10"></font></td>
+    </tr>
+  </table>
+  <p><font SIZE="2"><font face="Arial"><input type="submit" value="Add Account"></font></p>
+</form>
+
+<form action="/cgi-bin/adv/admin/view.cgi" method="post">
+  <p><input type="submit" value="View Ads"> </p>
+</form>
+<img src="http://drewstar.superscripts.com/pix/test.jpg" border="0">
+
+</font>
+</body>
+</html>
+
