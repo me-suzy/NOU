@@ -1,0 +1,26 @@
+<HTML><HEAD><TITLE>Messaging Menu</TITLE></HEAD><BODY>
+This page lets you send out messages to users on the system, they will receive
+this message in their "post office".  You can also read people's messages...
+they will NOT be marked as read.
+<HR width=75%>
+<B><BIG><CENTER><U>Send Messages To "Promotion" Users</U></CENTER></BIG></B>
+<BR><FORM action=promotion.cgi method=post>
+Subject: <INPUT type=text name=subject><BR>
+<TEXTAREA cols=48 rows=8 name=msg></TEXTAREA><BR>
+<INPUT type=submit value="Send!">
+</FORM>
+<HR width=75%>
+<B><BIG><CENTER><U>Send Messages To Everyone</U></CENTER></BIG></B>
+<SMALL>N.B. This may p**s off some users if they said no promotions!</SMALL>
+<BR><FORM action=masssend.cgi method=post>
+Subject: <INPUT type=text name=subject><BR>
+<TEXTAREA cols=48 rows=8 name=msg></TEXTAREA><BR>
+<INPUT type=submit value="Send!">
+</FORM>
+<HR width=75%><BR>
+<B><BIG><CENTER><U>Read Someone's Mail</U></CENTER></BIG></B>
+<FORM action=readmsgs.cgi method=post>
+UID: <input type=text name=u><BR>
+<INPUT type=submit value="Read!">
+</FORM>
+</BODY></HTML>
