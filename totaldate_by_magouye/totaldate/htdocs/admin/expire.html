@@ -1,0 +1,20 @@
+<HTML><HEAD><TITLE>Expire Things</TITLE></HEAD><BODY>
+Here you will haev the choice to expire both user accounts and messages...
+these are powerful options... once you have clicked the expire button THE
+CHANGES WILL TAKE PLACE WITHOUT FURTHER CONFIRMATION.<BR><BR>
+<HR width=75%>
+<BIG><B><CENTER><U>Expire Users</CENTER></B></BIG><BR></U>
+<FORM action=expnonuse.cgi method=post>
+<INPUT Type=submit value="Expire"> accounts not uesd in <INPUT type=text name=days>
+days.</FORM>
+<HR width=75%>
+<BIG><B><CENTER><U>Expire Messages</CENTER></B></BIG><BR></U>
+<FORM action=expmsgs.cgi method=post>
+Message Flag:<SELECT name=type>
+<Option>Read
+<Option>Both
+<OPTION>New
+</SELECT><BR>
+Message Is <INPUT type=text name=days> days old.<BR>
+<INPUT type=submit value="Expire"></FORM>
+</HTML>
