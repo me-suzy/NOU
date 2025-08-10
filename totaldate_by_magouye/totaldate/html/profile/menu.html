@@ -1,0 +1,18 @@
+<HTML>
+<BODY>
+<LI><A href="viewprofile.cgi?u=$user&c=$cookie"
+	target="mw">See how others see you.</A>
+<LI><A href="editprof.cgi?u=$user&c=$cookie" target="mw">
+	Edit your profile, what interests, etc.</A>
+<LI><A href="uppichtml.cgi?u=$user&c=$cookie" target="mw">
+	Upload your picture here!</A>
+<LI><A href="upvohtml.cgi?u=$user&c=$cookie" target="mw">
+	Upload your voice greeting here!</A>
+<HR width=75%>
+<!-- You may wish to include this...-->
+<FORM action=viewprofile.cgi method=post><INPUT type=hidden name=u value=$user>
+<INPUT type=hidden name=c value=$cookie>View User Profile [UID]: <INPUT type=text
+name=who><BR><INPUT type=submit value="Lookup"></FORM>
+
+</BODY>
+</HTML>
