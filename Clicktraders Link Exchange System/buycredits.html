@@ -1,0 +1,131 @@
+
+<html>
+
+<head>
+<title>CHECKOUT</title>
+</head>
+
+
+<body bgcolor="FFFFFF">
+<div align="center"><center>
+<form action="/cgi-bin/superlinks/buycredits.cgi" method="post">
+<table border="0" width="59%" cellspacing="4" cellpadding="0" height="497">
+
+  <tr>
+    <td width="62%" bgcolor="#000000" height="26"><small><font face="Arial" color="#FFFFFF">Amount</font></small></td>
+    <td width="67%" bgcolor="#000000" height="26"><font face="Arial" color="#FFFFFF"><small><select
+    name="ACCOUNT" size="1">
+      <option SELECTED value="1000">1000</option>
+      <option value="2500">2500</option>
+    </select></small></font></td>
+  </tr>
+
+  <tr>
+    <td width="62%" bgcolor="#000000" height="26"><small><font face="Arial" color="#FFFFFF">Payment
+    Method</font></small></td>
+    <td width="67%" bgcolor="#000000" height="26"><font face="Arial" color="#FFFFFF"><small><select
+    name="METHOD" size="1">
+      <option value="ECHECK">Checking Account (USA only)</option>
+      <option SELECTED>Visa</option>
+      <option>MasterCard</option>
+      <option>Discover</option>
+      <option value="Amex">American Express</option>
+      <option>Diners Club</option>
+      <option>JCB </option>
+    </select></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small>Card
+    Number</small></font></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="CARDNUM" size="18">&nbsp;(No spaces or hyphens please)</small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small>Exp.
+    Date</small></font></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="EXPDATE" size="7">&nbsp;mmyy or mm/yy</small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" height="34"><font face="Arial" size="2" color="#000000">Checking Account
+    Information</font><p><font face="Arial" color="#000000"><small>(if payment method is by
+    Checking Account)</small></font></td>
+    <td width="67%" height="34"></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small>Bank
+    Name</small></font></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="BANKNAME" size="19"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small>Account
+    Number</small></font></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="ACCTNO" size="19">&nbsp;</small></font><p><font
+    face="Arial" color="#FFFFFF"><small>(All numeric - no spaces please)</small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small>ABA
+    Routing Code</small></font></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="ABACODE" size="11"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" height="20"><font face="Arial" size="2" color="#000000">Customer
+    Information</font></td>
+    <td width="67%" height="20"></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small>Name</small></font></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="NAME" value="" size="40"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small>Address</small></font></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="ADDRESS" value="" size="40"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><small><font face="Arial" color="#FFFFFF">City</font></small></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="CITY" value="" size="40"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><small><font face="Arial" color="#FFFFFF">State</font></small></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="STATE" value="" size="22"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><small><font face="Arial" color="#FFFFFF">Zip</font></small></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="ZIP" value="" size="22"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><small><font face="Arial" color="#FFFFFF">Country</font></small></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="COUNTRY" size="22"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="25"><small><font face="Arial" color="#FFFFFF">Phone</font></small></td>
+    <td width="67%" bgcolor="#000000" height="25"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="PHONE" size="22"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="24"><small><font face="Arial" color="#FFFFFF">Email</font></small></td>
+    <td width="67%" bgcolor="#000000" height="24"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="EMAIL" value="" size="40"></small></font></td>
+  </tr>
+  <tr>
+    <td width="62%" bgcolor="#000000" height="24"><small><font face="Arial" color="#FFFFFF">Username</font></small></td>
+    <td width="67%" bgcolor="#000000" height="24"><font face="Arial" color="#FFFFFF"><small><input
+    type="text" name="USERNAME" value="" size="40"></small></font></td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center"><small><font face="Arial"><input type="submit"
+value="Submit Transaction Now"></font></small></p></form></body>
+</html>
+
+
