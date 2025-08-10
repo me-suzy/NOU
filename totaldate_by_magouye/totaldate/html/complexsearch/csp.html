@@ -1,0 +1,41 @@
+<HTML><BODY>Please select the requirements of your perfect partner.  All must
+be filled in.<BR>
+<FORM action=cspdo.cgi method=post><INPUT type=hidden name=u value="$user">
+<INPUT type=hidden name=c value="$cookie">
+
+<!-- You will want to use select boxes for values... I just whipped up text
+     boxes-->
+
+The format of layout:-<BR>
+<B>Topic</B> &nbsp; &nbsp; &nbsp; Importance &nbsp; &nbsp; &nbsp; Value<BR>
+<B>Height:</B>
+<SELECT name=heightimp><OPTION value=3>Needed<OPTION value=0>Not At All<OPTION value=1>Would Be Nice<OPTION value=2>Relativly</SELECT>
+<INPUT type=text name=height><BR>
+
+<B>Weight:</B>
+<SELECT name=weightimp><OPTION value=3>Needed<OPTION value=0>Not At All<OPTION value=1>Would Be Nice<OPTION value=2>Relativly</SELECT>
+<INPUT type=text name=weight><BR>
+
+<B>Intelligence:</B>
+<SELECT name=intelligenceimp><OPTION value=3>Needed<OPTION value=0>Not At All<OPTION value=1>Would Be Nice<OPTION value=2>Relativly</SELECT>
+<INPUT type=text name=intelligence><BR>
+
+<B>Income:</B>
+<SELECT name=incomeimp><OPTION value=3>Needed<OPTION value=0>Not At All<OPTION value=1>Would Be Nice<OPTION value=2>Relativly</SELECT>
+<INPUT type=text name=income><BR>
+
+<B>Religion:</B>
+<SELECT name=religionimp><OPTION value=3>Needed<OPTION value=0>Not At All<OPTION value=1>Would Be Nice<OPTION value=2>Relativly</SELECT>
+<INPUT type=text name=religion><BR>
+
+<B>Smoking:</B>
+<SELECT name=smokeimp><OPTION value=3>Needed<OPTION value=0>Not At All<OPTION value=1>Would Be Nice<OPTION value=2>Relativly</SELECT>
+<INPUT type=text name=smoke><BR>
+
+<HR width=10%><BR>
+Same Country Needed: <SELECT name=samelocale><OPTION value=1>Yes<OPTION value=0>No</SELECT><BR>
+Picture Needed: <SELECT name=haspic><OPTION value=1>Yes<OPTION value=0>No</SELECT><BR>
+Voice Greeting Needed: <SELECT name=hasvoice><OPTION value=1>Yes<OPTION value=0>No</SELECT><BR>
+
+<INPUT type=submit>
+</FORM><BR><BR>Once your settings are stored you can do a complex search.</BODY></HTML>
