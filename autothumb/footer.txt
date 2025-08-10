@@ -1,0 +1,15 @@
+</table>
+</center></div>
+<center>
+
+<font face="Arial"><big><strong>CUSTOM FOOTER AREA</strong></big></font></p>
+</font>
+
+<a href="http://www.superscripts.com/test/autothumb/pix/">
+<font face="Arial"><big><strong>RETURN TO MAIN INDEX</strong></big></font></p>
+</font>
+</a>
+
+</center>
+</body>
+</html>
