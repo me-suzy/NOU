@@ -1,0 +1,168 @@
+<html>
+
+<head>
+<title>UPLOAD DATABASE</title>
+</head>
+
+<body>
+<img src=http://drewstar.superscripts.com/pix/test.jpg border=0>
+
+<p align="center"><big><big><font face="Arial" color="#FF0000"><big><strong>VTERM 1.0</strong></big></font></big></big></p>
+
+<p align="center"><font face="Arial" color="#000000"><strong>BILLING DATABASE PROCESSING
+SYSTEM</strong></font></p>
+
+<p align="center"><small><a href="http://www.superscripts.com/"><font face="Arial"
+color="#000000">Created by Drew Star</font></a></small></p>
+<div align="center"><center>
+
+<table BORDER="0" WIDTH="560">
+  <tr>
+    <td ALIGN="center" bgcolor="#000000"><form method="POST" enctype="multipart/form-data"
+    action="upload.cgi">
+      <p><font face="Arial" color="#FFFFFF">Database to upload: <input type="file"
+      name="database"><br>
+      <br>
+      <input type="submit" value="Upload Database To VTerm"></font></p>
+    </form>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<blockquote>
+  <form action="process.cgi" method="post">
+    <input type="hidden" name="FUNCTION" value="addclient"><div align="center"><center><p><input
+    type="submit" value="START NEW DATABASE"> </p>
+    </center></div>
+  </form>
+  <p><strong><small><font face="Arial">Database requirements are outlined below</font></small></strong></p>
+</blockquote>
+
+<blockquote>
+  <p align="left"><font face="Arial" color="#000000"><small>Your database must be created in
+  a field delimited, flat file format using the PIPE | character to separate fields.&nbsp;
+  Click on the BROWSE button to locate your flatfile billing database.&nbsp; If you do not
+  have a database you may create one by clicking on the START NEW DATABASE button.&nbsp; If
+  you are uploading an existing database the fields must be arranged EXACTLY in the
+  following order:</small></font></p>
+  <font size="1"><p><font face="Arial" color="#FF0000">$NAME|$ADDRESS|$CITY|$STATE|$ZIP|$COUNTRY|$PHONE|$EMAIL|$ACCTNO|$ABACODE|$BANKNAME|$CARDNUM|$EXPDATE|$AMOUNT|$REBILL|$CYCLE|$METHOD|$STATUS</font></font><font
+  color="#FF0000" face="Arial" size="1">|$RESPONSE</font></p>
+</blockquote>
+
+<blockquote>
+  <p><font size="2" color="#000000" face="Arial">Each field is described below</font></p>
+  <div align="center"><center><table border="0" width="54%" cellspacing="4" cellpadding="0">
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">FIELD</font></td>
+      <td width="67%" bgcolor="#000000"><font face="Arial" color="#FFFFFF"><small>Description</small></font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$NAME</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">The
+      cardholders name (first and last)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ADDRESS</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">Billing
+      address</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$CITY</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">Billing city</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$STATE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      state</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ZIP</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      zipcode</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$COUNTRY</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      country (optional)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$PHONE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      phone number</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$EMAIL</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">billing
+      email address</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ACCTNO</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">checking
+      account number (if billing by check)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$ABACODE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">checking
+      routing number (if billing by check)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$BANKNAME</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">checking
+      bank name (if billing by check)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$CARDNUM</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">credit card
+      number (if billing by credit card)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$EXPDATE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">expiration
+      date (if billing by credit card)&nbsp; format is monthyear (eg:&nbsp; 0202)</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$AMOUNT</font><p>&nbsp;</td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">amount to
+      bill.&nbsp; must be followed by 2 decimal places.&nbsp; eg:&nbsp; 10.00</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$REBILL</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">days between
+      billing periods.&nbsp; eg:&nbsp; 30 for every 30 days</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$CYCLE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">days since
+      last billing.&nbsp; when this value exceeds the REBILL value billing may occur</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$METHOD</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">method of
+      billing.&nbsp; values must equal one of the following:&nbsp; ECHECK (for checking), Visa,
+      MasterCard, Discover,American Express, Diners Club, JCB.&nbsp; This field is case
+      sensitive.</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$STATUS</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">values equal
+      passed, failed or testing.&nbsp; If the last billing attempt failed this will cause the
+      entry to be highlighted in red.&nbsp; This value can be re-initialized in the edit
+      menu.&nbsp; This field value is generated by the billing software.</font></td>
+    </tr>
+    <tr>
+      <td width="33%" bgcolor="#FF0000"><font size="2" face="Arial" color="#FFFFFF">$RESPONSE</font></td>
+      <td width="67%" bgcolor="#000000"><font size="2" face="Arial" color="#FFFFFF">this field
+      contains error messages returned by authorize.net.&nbsp; The problem must be corrected in
+      the edit menu in order to bill successfully.</font><p>&nbsp;</td>
+    </tr>
+  </table>
+  </center></div>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>
+
