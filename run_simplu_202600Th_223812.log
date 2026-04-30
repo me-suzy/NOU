@@ -1,0 +1,22 @@
+========================================== 
+LOG START: Thu 04/30/2026 22:38:12.56 
+========================================== 
+ 
+========================================== 
+  PORNIRE SCRIPT AUTOMATIZARE 
+========================================== 
+ 
+[LOG] Director curent: D:\Simplu\NOU 
+[LOG] Data/Ora: Thu 04/30/2026 22:38:12.61 
+ 
+[STEP 1] Python va porni Chrome debug si apoi uploadul. 
+ 
+[STEP 2] Pornire script Python... 
+[LOG] Pornesc Python DIRECT in consola (fara wrapper PowerShell). 
+[INFO] Dupa pornire trebuie sa vezi imediat linii [DEBUG]/[INFO]. 
+[LOG] Folosesc: python 
+ 
+[LOG] Script Python s-a incheiat cu codul: 0 
+========================================== 
+LOG END: Thu 04/30/2026 22:51:30.20 
+========================================== 
